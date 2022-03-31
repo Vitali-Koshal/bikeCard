@@ -1,0 +1,20 @@
+<template>
+    <lightning-quick-action-panel header="Additional action">
+        <template if:true={getRecordButton}>
+            <lightning-record-view-form record-id={recordId} object-api-name={objectApiName}>
+                <div  class="slds-box">
+                    <h1>{objectApiName}</h1>
+                    <lightning-output-field field-name="Id"></lightning-output-field>
+                </div>
+            </lightning-record-view-form>
+        </template>
+        <template if:false={getRecordButton}>
+
+        </template>
+        <div slot="footer">
+            <lightning-button variant="neutral" label="Close" onclick={handleClose}></lightning-button>
+            <lightning-button variant="brand" label="Get Record Infos" onclick={handleGetRecordInfo} class="slds-m-left_x-small"></lightning-button>
+        </div>
+    </lightning-quick-action-panel>
+    
+</template>

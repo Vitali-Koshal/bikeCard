@@ -1,0 +1,24 @@
+<template>
+    
+        <div>
+            <p>Text {clickedInfoButtonLabel}</p>
+            <c-record-detail clicked-info-button-label={myvalue}></c-record-detail>
+        </div>
+    
+    <footer>
+        <div>
+            <div class="button">
+                <lightning-button variant="neutral"  
+                label="Get Record Infos" 
+                onclick={handleClick}
+                
+                class="slds-m-left_x-small"></lightning-button>
+                <lightning-button variant = "neutral"
+                label="Close"
+                onclick={handleClick}
+                class="slds-m-left_x-small">
+                </lightning-button>
+            </div>
+        </div>
+    </footer>    
+</template>
