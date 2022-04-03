@@ -3,12 +3,12 @@ import { CloseActionScreenEvent } from 'lightning/actions';
 export default class QuickActionPanel extends LightningElement {
     @api recordId;
     @api objectApiName;
-    getRecordButton=false;
+    getRecordButton = false;
 
     handleClose() {        
         this.dispatchEvent(new CloseActionScreenEvent());
     }
     handleGetRecordInfo() {
-        this.getRecordButton=true;
+        this.getRecordButton = true;
     }
 }
